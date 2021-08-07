@@ -1,0 +1,30 @@
+{
+    "$id": "https://example.boilerplate/todo.schema.json",
+    "title": "Todo",
+    "type": "object",
+    "definitions": {
+        "todo": {
+            "title": "Todo",
+            "type": "object",
+            "description": "To do or not to do, that is the question",
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "description": "Todo text, like clean room"
+                },
+                "done": {
+                    "type": "boolean",
+                    "description": "Is this todo item completed?"
+                },
+                "uuid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "text",
+                "done",
+                "uuid"
+            ]
+        }
+    }
+}
